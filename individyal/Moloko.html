@@ -82,7 +82,7 @@
             function calc() {
             var n = parseInt(document.getElementById("number").value);
             var price = 71.99 * n;
-            document.getElementById("price").innerText = price;
+            document.getElementById("price").innerText = Math.round(price);
             console.log(price);
         }
         </script>   
