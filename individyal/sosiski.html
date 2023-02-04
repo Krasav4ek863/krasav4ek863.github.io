@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    main
+    {
+        height: calc(100vh - 100px);
+    }
+    A {
+    text-decoration: none;
+    }
+    .item {
+        display: flex;
+        border: #ff0000 solid;
+        margin-right: auto;
+        width: fit-content;
+        font-family: sans-serif;
+    }
+
+    .products {
+        display: flex;
+    }
+    h1{
+        font-family:cursive;
+    }
+    .img_element {
+        position: absolute;
+        left: 7px;
+        top:50px;
+    }
+    </style>
+<body>
+    <header>
+        <div class="header_element">
+            <h1 class="h1">Чародейчик</h1>
+            <img src="ogiioo.png" width="80px" height="80px">        
+        </div>
+      <ul>
+        <li><a href="gg.html"><h1>Скидки</h1></a></li>
+        <li><a href="Rabotniki.html"><h1>Работники</h1></a></li>
+        <li><a href="Korzina.html"><h1>Корзина</h1></a></li>
+     </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Для вас</a>
+                  <ul>
+                    <li><a href="https://nolgolf.github.io/">Партнёры</a></li>
+                    <li><a href="#">Оставить отзыв</a></li>
+                    <li><a href="#">Теги товаов</a>
+                        <ul>
+                            <li><a href="../Molochnoe.html">Молочка</a></li>
+                            <li><a href="../Myasnoe.html">Мясное</a></li>
+                            <li><a href="../Napitki.html">Напитки</a></li>
+                        </ul>
+
+    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+<div class="item">
+    <img src="Sosiski.jpg" alt=""width="200px" height="200">
+    <div class="desc">
+        <h2>Сосиски Вязанка</h2>
+        <h3>Состав: свинина, говядина, филе куриных грудок, мясо цыпленка-бройлера механической обвалки, вода питьевая, белковый стабилизатор (шкурка свиная, вода питьевая), молоко коровье питьевое, молоко коровье сухое, крахмал кукурузный, смесь посолочно-нитритная (соль, фиксатор окраски: нитрит натрия), соль, продукты яичные, белок животный (говяжий, свиной), стабилизаторы (пирофосфаты, полифосфаты), регулятор кислотности: трифосфаты, загустители (ксантановая камедь, каррагинан из водорослей Euchema, агар), виноградный сахар, натуральные пряности и экстракты пряностей, антиокислители (аскорбиновая кислота, лимонная кислота), краситель: кармины. В продукте возможно наличие следов горчицы, злаков, содержащих глютен и клетчатку, сельдерея и продуктов их переработки.</h3>
+        <h3>Цена: <span id="price">105</span> руб</h3>
+        <button onclick="calc()">Расчитать цену</button>
+        Количество: <input type="text" name="" id="number">
+        <script>
+            function calc() {
+            var n = parseInt(document.getElementById("number").value);
+            var price = 100 * n;
+            document.getElementById("price").innerText = price;
+            console.log(price);
+        }
+        </script>   
+    </div>
+</div>
+    <div class="products"></div></a>
+    <main>
+        
+    </main>
+<footer>
+<a href="Postychis_v_moy_dver.html"><h1>Постучаться в дверь</h1></a>
+</footer>
+</body>
+</html>
