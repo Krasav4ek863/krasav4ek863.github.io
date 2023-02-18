@@ -72,17 +72,18 @@
         </ul>
     </nav>
 <div class="item">
-    <img src="main.png" alt=""width="400px" height="400">
+    <img src="5661.jfif" alt=""width="200px" height="200">
     <div class="desc">
-        <h2>Монблан Бургер</h2>
-        <h3>Сочный бифштекс из натуральной говядины, приготовленный на гриле, вкуснейшая сырная котлета на карамелизованной булочке, ароматный бекон, кусочки жареного лука, свежий салат и специальный чесночный соус.</h3>
-        <h3>Цена: <span id="price">245</span> руб</h3>
+        <h2>Криветки Королевские</h2>
+        <h3>Креветки VICI Королевские – крупные тепловодные креветки, которые распространены в водах Тихого и Индийского океанов. </h3>
+        <h3>3000 руб. за 1 кг</h3>
+        <h3>Цена: <span id="price">3000</span> руб</h3>
         <button onclick="calc()">Расчитать цену</button>
-        Количество: <input type="text" name="" id="number">
+        Взвесить: <input type="text" name="" id="number">
         <script>
             function calc() {
             var n = parseInt(document.getElementById("number").value);
-            var price = 245 * n;
+            var price = 100 * n;
             document.getElementById("price").innerText = price;
             console.log(price);
         }
