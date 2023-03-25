@@ -54,7 +54,8 @@
                   <ul>
                     <li><a href="#">Награды</a></li>
                     <li><a href="#">Оставить отзыв</a></li>
-                    <li><a href="#">Теги товаов</a>                   
+                    <li><a href="#">Теги товаов</a>
+                    
                         <ul>
                             <li><a href="Molochnoe.html">Молочка</a></li>
                             <li><a href="Myasnoe.html">Мясное</a></li>
@@ -64,7 +65,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="Drygaya_tema.html">Другая тема🎩</a></li>
+            <li><a href="Drygaya_tema">Другая тема🎩</a></li>
             <li><a href="">Graphic Design</a></li>
             <li><a href="#">Inspiration</a></li>
             <li><a href="#">Contact</a></li>
@@ -80,46 +81,7 @@
             <h3>105руб</h3>
         </a>
     </div>
-    <div class="item">
-
-        <img src="22352874.jpg" alt="" width="130px" height="150">
-        <h2>Грудка цыпленка</h2>
-            <h3>404.99руб</h3>
-    </div>
-    <div class="item">
-        <a href="individual/shaurma.html"  style="color: black;"></a>
-        <img src="1618495789_33-p-fon-shaurma-37.jpg" alt=""width="200px" height="150">
-        <h2>Шаурма</h2>
-            <h3>199.99руб</h3>
-    </div>
-    <div class="item">
-        <a href="individyal/Monblan.html" style="color: black;" >
-        <img src="main.png" alt=""width="150px" height="150px">
-        <h2>Монблан Бургер</h2>
-            <h3>245руб</h3>
-        </a>
-    </div>
-    <div class="item napitki">
-        <a href="individyal/Moloko.html"  style="color: black;">
-            <img src="ua_pim_305185001001_01.png" alt=""width="150px" height="150">
-            <h2>Молоко Простоквашино</h2>
-                <h3>71.99руб</h3>
-        </a>
-    </div>
-    <div class="item napitki">
-        <a href="individyal/Coca-Cola.html"  style="color: black;">
-            <img src="coca_cola_05.jpg" alt=""width="170px" height="150">
-            <h2>Coca-Cola</h2>
-            <h3>100руб</h3>
-        </a>
-    </div>
-    <div class="item moreprodukti">
-        <a href="individyal/krivenki.html"  style="color: black;">
-        <img src="5661.jfif" alt=""width="170px" height="170">
-        <h2>Криветки Королевские</h2>
-            <h3>3000руб</h3>
-        </a>
-    </div>
+   
 </div>
     <main>
         <p>Заходя на этот сайт вы автоматически принимаете условия пользовательского соглашения.</p>  

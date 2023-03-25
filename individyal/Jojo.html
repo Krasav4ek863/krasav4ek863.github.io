@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function cklik(g) {
+            z = document.getElementById("JojoShirt");
+            z.src = g;
+        }
+    </script>
+</head>
+<style>
+    main
+    {
+        height: calc(100vh - 100px);
+    }
+    a {
+    text-decoration: none;
+    }
+    .item {
+        border: #ff0000 solid;
+        width: 250px;
+        margin: 3px;
+        margin-right: 10px;
+        padding: 5px;
+    }
+    .item h2 {
+        height: 60px;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .meny {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-d {
+        display: flex;
+    }
+    .gtr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+    .rrrt {
+        font-size: 2em;
+        float: 2;
+    }
+    .aaa {
+        margin-left: 20px;
+    }
+    .hhhhh {
+        height: 150px;
+        width: 400px;
+    }
+</style>
+<body>
+    <header>
+        <div class="header_element">
+         <h1 class="h1">Чародейчик</h1>
+         <img src="ogiioo.png" width="80px" height="80px">     
+        </div>   
+          <ul>
+            <li><a href="gg.html"><h1>Скидки</h1></a></li>
+            <li><a href="Rabotniki.html"><h1>Работники</h1></a></li>
+            <li><a href="Korzina.html"><h1>Корзина</h1></a></li>
+         </ul>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Для вас</a>
+                      <ul>
+                        <li><a href="#">Награды</a></li>
+                        <li><a href="#">Оставить отзыв</a></li>
+                        <li><a href="#">Теги товаов</a>                   
+                            <ul>
+                                <li><a href="../Molochnoe.html">Молочка</a></li>
+                                <li><a href="../Myasnoe.html">Мясное</a></li>
+                                <li><a href="../Napitki.html">Напитки</a></li>
+                                <li><a href="../Fastfood.html">Фаст-фуд</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Drygaya_tema.html">Другая тема🎩</a></li>
+                <li><a href="">Graphic Design</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+
+    <div class="item-d">
+        <div class="gtr">
+            <img src="JojoShirt.jpg" alt="" width="180" height="180" onclick="cklik('JojoShirt.jpg')"><br>
+            <img src="JojoShirt2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirt2.jpg')"><br>
+            <img src="JojoShirtMan.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan.jpg')"><br>
+            <img src="JojoShirtMan2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan2.jpg')"><br>
+        </div>
+        <img src="JojoShirt.jpg" alt="" id="JojoShirt">
+        <div class="aaa">
+            <p class="rrrt">Джоджо отпечаток розовый</p>
+            <p class="rrrt">1550₽</p>
+            <p>Состав: 92% хлопок, 8% эластан</p>
+            <button onclick="calc()" class="hhhhh">Добавить в корзину</button>
+
+        </div>
+    </div>
+    
+    <main>
+        <p>Заходя на этот сайт вы автоматически принимаете условия пользовательского соглашения.</p>  
+    </main>
+    <em>
+        Не нажимай на эту <a href="memeblog.html"  style="color:rgba(246, 21, 66, 0.871);">ссылку</a> 
+    </em>
+     
+        
+<footer>
+<a href="Postychis_v_moy_dver.html"><h1>Постучаться в дверь</h1></a>
+</footer>
+</body>
+</html>
