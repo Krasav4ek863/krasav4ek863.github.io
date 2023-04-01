@@ -11,6 +11,18 @@
             z = document.getElementById("JojoShirt");
             z.src = g;
         }
+        function toter() {
+            z = document.getElementById("fiu");
+            z.innerHTML = "Размер XS <br> Российский размер...............44-46 <br>  Обхват груди,см................86-94 <br> Длинна по центру спинки..........67.5 <br> Ширина под проймой...............47.5";
+        }
+        function torent() {
+            z = document.getElementById("fiu");
+            z.innerHTML = "Размер XS <br> Российский размер...............58 <br>  Обхват груди,см................110-118 <br> Длинна по центру спинки..........70 <br> Ширина под проймой...............59.5";
+        }
+        function billion() {
+            z = document.getElementById("fiu");
+            z.innerHTML = "Размер XS <br> Российский размер...............48 <br>  Обхват груди,см................94-98 <br> Длинна по центру спинки..........68 <br> Ширина под проймой...............49.5";
+        }
     </script>
 </head>
 <style>
@@ -57,8 +69,18 @@
         margin-left: 20px;
     }
     .hhhhh {
-        height: 150px;
-        width: 400px;
+        height: 60px;
+        width: 330px;       
+        font-size: 1.5em;
+        color: white;
+        background-color: rgb(78, 16, 37);
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .img {
+        border: 1.5px rgb(110, 15, 15) solid;
     }
 </style>
 <body>
@@ -101,26 +123,58 @@
 
     <div class="item-d">
         <div class="gtr">
-            <img src="JojoShirt.jpg" alt="" width="180" height="180" onclick="cklik('JojoShirt.jpg')"><br>
-            <img src="JojoShirt2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirt2.jpg')"><br>
-            <img src="JojoShirtMan.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan.jpg')"><br>
-            <img src="JojoShirtMan2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan2.jpg')"><br>
+            <img class="img" src="JojoShirt.jpg" alt="" width="180" height="180" onclick="cklik('JojoShirt.jpg')" ><br>
+            <img class ="img" src="JojoShirt2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirt2.jpg')"><br>
+            <img class="img" src="JojoShirtMan.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan.jpg')"><br>
+            <img class="img" src="JojoShirtMan2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan2.jpg')"><br>
         </div>
-        <img src="JojoShirt.jpg" alt="" id="JojoShirt">
+        <img class="img" src="JojoShirt.jpg" alt="" id="JojoShirt" width="800" height="800">
         <div class="aaa">
             <p class="rrrt">Джоджо отпечаток розовый</p>
+
+            <button onclick="toter()">XS</button>
+            <button onclick="torent()">XXL</button>    
+            <button onclick="billion()">S</button>    
+        <div id="fiu">
+             <P2>Размер XS</P2> <br>
+             <h>Российский размер...............?</h> <br>   
+             <h>Обхват груди,см................?</h>  <br>
+             <h>Длинна по центру спинки.........?</h> <br>
+             <h>Ширина под проймой..............?</h><br>
+        </div>
             <p class="rrrt">1550₽</p>
             <p>Состав: 92% хлопок, 8% эластан</p>
-            <button onclick="calc()" class="hhhhh">Добавить в корзину</button>
+            <button onclick="calc()" class="hhhhh"><p>Добавить в корзину</p></button>
 
         </div>
     </div>
+<dd>
+    <br>
+</dd>
+<task>
+    <h4>О товаре <br>
+
+    Футболка из хлопка с добавлением эластана (аналог лайкры): за счет этого ткань немного тянется, хорошо держит форму и комфортно садится по фигуре. Силуэт приталенный, ориентирован на мужчин с широкими плечами и узкими бедрами. Понравится тем, кто хочет подчеркнуть достоинства своего торса и любит футболки “по фигуре”.<br><br>
     
+    Детали........
+    приталенный силуэт, круглый вырез ворота, длина до линии бедра, короткий рукав<br><br>
+    Правила ухода.........
+    перед стиркой вывернуть наизнанку, стирка ручная или машинная в щадящем режиме при температуре не выше 30 градусов, без отбеливателя. Нельзя гладить по принту<br><br>
+    Состав.........
+    92% хлопок, 8% эластан<br><br>
+    Размер товара на модели......
+    L<br><br>
+    Параметры модели (ОГ-ОТ-ОБ)........
+    105-87-104<br><br>
+    Рост модели на фото.....189см</h4>
+</task>
+  
     <main>
         <p>Заходя на этот сайт вы автоматически принимаете условия пользовательского соглашения.</p>  
     </main>
     <em>
         Не нажимай на эту <a href="memeblog.html"  style="color:rgba(246, 21, 66, 0.871);">ссылку</a> 
+        <button onclick="window.location.href = 'https://tglink.ru/charodeychik';">Click Here</button>
     </em>
      
         
