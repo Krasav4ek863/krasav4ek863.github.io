@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        const di = document.images;
+        ovr = (imgsrc, imgid) => {if (di) document.getElementById(imgid).src = imgsrc}
+        out = (imgsrc, imgid) => {if (di) document.getElementById(imgid).src = imgsrc}
+
+    </script>
 </head>
 <style>
     main
@@ -75,10 +81,17 @@
         
 <div class="products">
     <div class="item">
-        <a href="individyal/Jojo.html" style="color: black;">
-        <img src="JojoShirt.jpg" width="150" height="150">
+        <a href="individyal/Jojo.html" style="color: black;" onmouseover="ovr('JojoShirtMan.jpg', 'aimg')" onmouseout="out('JojoShirt.jpg', 'aimg')">
+        <img src="JojoShirt.jpg" width="150" height="150" id="aimg">
         <h2>Джоджо футболка </h2>
             <h3>1550₽</h3>
+        </a>
+    </div>
+    <div class="item">
+        <a href="individyal/JosephJoestar.html" style="color: black;" onmouseover="ovr('OHMYGODMAN.jpg', 'aimgt')" onmouseout="out('OHMYGOD.jpg', 'aimgt')">
+        <img src="OHMYGOD.jpg" width="150" height="150" id="aimgt">
+        <h2>О Боже мой! </h2>
+            <h3>1330₽</h3>
         </a>
     </div>
    

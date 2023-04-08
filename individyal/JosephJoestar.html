@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function cklik(g) {
-            z = document.getElementById("JojoShirt");
+            z = document.getElementById("OHMYGOD");
             z.src = g;
         }
         function toter() {
@@ -23,6 +23,26 @@
             z = document.getElementById("fiu");
             z.innerHTML = "Размер XS <br> Российский размер...............48 <br>  Обхват груди,см................94-98 <br> Длинна по центру спинки..........68 <br> Ширина под проймой...............49.5";
         }
+        function tokcd() {
+            z =  document.getElementById("ytr");
+            z.innerHTML = "Цвет - тёмно-синий"
+        }
+            function tokyd() {
+            z =  document.getElementById("ytr");
+            z.innerHTML = "Цвет - белый"
+        }
+        const di = document.images;
+        ovr = (imgsrc, imgid) => {if (di) {
+            document.getElementById(imgid).src = imgsrc;
+            document.getElementById(imgid+'a').src = imgsrc+"BLUE";
+            document.getElementById(imgid+'b').src = imgsrc+"BLUE";
+            document.getElementById(imgid+'c').src = imgsrc;
+            document.getElementById(imgid+'d').src = imgsrc;
+            document.getElementById(imgid).src = imgsrc;
+            document.getElementById(imgid).src = imgsrc;
+            }
+        }
+
     </script>
 </head>
 <style>
@@ -86,7 +106,14 @@
         width: 50px;
         height: 50px;
         border-radius: 40px;
-        background-color: rgb(45, 45, 45);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid  rgb(47, 158, 255)
+    }
+    .еgtril {
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        background-color:rgb(34,55,88);
         border: 2px solid  rgb(47, 158, 255)
     }
 </style>
@@ -130,14 +157,15 @@
 
     <div class="item-d">
         <div class="gtr">
-            <img class="img" src="JojoShirt.jpg" alt="" width="180" height="180" onclick="cklik('JojoShirt.jpg')" ><br>
-            <img class ="img" src="JojoShirt2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirt2.jpg')"><br>
-            <img class="img" src="JojoShirtMan.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan.jpg')"><br>
-            <img class="img" src="JojoShirtMan2.jpg" alt=""width="180" height="180" onclick="cklik('JojoShirtMan2.jpg')"><br>
-        </div>
-        <img class="img" src="JojoShirt.jpg" alt="" id="JojoShirt" width="800" height="800">
+            <img class="img" src="OHMYGOD.jpg" alt="" width="143" height="143" onclick="cklik('OHMYGOD.jpg')" ><br>
+            <img class ="img" src="OHMYGOD2.jpg" alt=""width="143" height="143" onclick="cklik('OHMYGOD2.jpg')"><br>
+            <img class="img" src="OHMYGODMAN.jpg" alt=""width="143" height="143" onclick="cklik('OHMYGODMAN.jpg')"><br>
+            <img class="img" src="OHMYGODMAN2.jpg" alt=""width="143" height="143" onclick="cklik('OHMYGOD2.jpg')"><br>
+            <img class="img" src="OHMYGODMAN3.jpg" alt=""width="144" height="144" onclick="cklik('OHMYGODMAN3.jpg')"><br>
+    </div>
+    <img class="img" src="OHMYGOD.jpg" alt="" id="OHMYGOD" width="800" height="800">
         <div class="aaa">
-            <p class="rrrt">Джоджо отпечаток розовый</p>
+            <p class="rrrt">О Боже мой!</p>
 
             <button onclick="toter()">XS</button>
             <button onclick="torent()">XXL</button>    
@@ -149,10 +177,13 @@
              <h>Длинна по центру спинки.........?</h> <br>
              <h>Ширина под проймой..............?</h><br>
         </div>
-            <p class="rrrt">1550₽</p>
-            <h>Цвет - чёрный</P>
-            <button class="ggtril"></button>
-            <p>Состав: 92% хлопок, 8% эластан</p>
+            <p class="rrrt">1330₽</p>
+        <div id="ytr">            
+            <h >Цвет - белый</h>
+        </div>
+            <button class="ggtril" onclick="tokyd()"></button>
+            <button class="еgtril" onclick="ovr('OHMYGODBLUE.jpg', 'OHMYGOD')"></button>
+            <p>Состав: 100% хлопок</p>
             <button onclick="calc()" class="hhhhh"><p>Добавить в корзину</p></button>
 
         </div>
@@ -161,21 +192,25 @@
     <br>
 </dd>
 <task>
-    <h4>О товаре <br>
-
-    Футболка из хлопка с добавлением эластана (аналог лайкры): за счет этого ткань немного тянется, хорошо держит форму и комфортно садится по фигуре. Силуэт приталенный, ориентирован на мужчин с широкими плечами и узкими бедрами. Понравится тем, кто хочет подчеркнуть достоинства своего торса и любит футболки “по фигуре”.<br><br>
+    О товаре <br>
+    <br>
+    Базовая футболка прямого кроя, создана из мягкого хлопка. Можно купить с принтом из каталога, без принта или со своим дизайном.<br><br>
     
-    Детали........
-    приталенный силуэт, круглый вырез ворота, длина до линии бедра, короткий рукав<br><br>
-    Правила ухода.........
-    перед стиркой вывернуть наизнанку, стирка ручная или машинная в щадящем режиме при температуре не выше 30 градусов, без отбеливателя. Нельзя гладить по принту<br><br>
-    Состав.........
-    92% хлопок, 8% эластан<br><br>
-    Размер товара на модели......
-    L<br><br>
-    Параметры модели (ОГ-ОТ-ОБ)........
-    105-87-104<br><br>
-    Рост модели на фото.....189см</h4>
+    Состав...........100% хлопок<br>
+    Тип нанесения..........Прямая печать пигментными чернилами<br>
+    Силуэт...........Прямой<br>
+    Вырез горловины.........Круглый<br>
+    Длина............До линии бёдер<br>
+    Размер товара на модели...........M<br>
+    Параметры модели (ОГ-ОТ-ОБ)...........94-73-93<br>
+    Рост модели на фото..........188см<br>
+    Стиль............Повседневный, спортивный, домашний<br>
+    Сезон..........Мульти<br>
+    Размерный ряд............XXS - 7XL<br>
+    Пол.........Мужской<br>
+    Страна производства...........Россия<br>
+    Стандартная упаковка..........Пакет с клеевым клапаном 25*32см<br>
+    Правила ухода..............Максимальная температура стирки 30 С. Отбеливание запрещено. Не применять барабанную сушку. Гладить при температуре не более 110 С. Сухая чистка запрещена.<br>
 </task>
   
     <main>
