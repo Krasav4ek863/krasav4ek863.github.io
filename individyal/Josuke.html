@@ -9,15 +9,15 @@
     <script>
         function toter() {
             z = document.getElementById("fiu");
-            z.innerHTML = "Размер XS <br> Российский размер...............44-46 <br>  Обхват груди,см................86-94 <br> Длинна по центру спинки..........67.5 <br> Ширина под проймой...............47.5";
+            z.innerHTML = "Размер XSS <br> Российский размер...............40 <br>  Обхват груди,см................78-82 <br> Длинна по центру спинки..........59";
         }
         function torent() {
             z = document.getElementById("fiu");
-            z.innerHTML = "Размер XS <br> Российский размер...............58 <br>  Обхват груди,см................110-118 <br> Длинна по центру спинки..........70 <br> Ширина под проймой...............59.5";
+            z.innerHTML = "Размер 5XL <br> Российский размер...............62-64 <br>  Обхват груди,см................122-130 <br> Длинна по центру спинки..........66";
         }
         function billion() {
             z = document.getElementById("fiu");
-            z.innerHTML = "Размер XS <br> Российский размер...............48 <br>  Обхват груди,см................94-98 <br> Длинна по центру спинки..........68 <br> Ширина под проймой...............49.5";
+            z.innerHTML = "Размер XXXL <br> Российский размер...............56 <br>  Обхват груди,см................110-114 <br> Длинна по центру спинки..........64,5";
         }
         function tokcd() {
             z =  document.getElementById("ytr");
@@ -31,8 +31,9 @@
             const di = document.images;
             btn1 = document.getElementById("button1");
             btn2 = document.getElementById("button2");
+            btn3 = document.getElementById("button3");
             if (di) {
-                imgsrc = 'OHMYGOD';
+                imgsrc = 'Josuke';
                 document.getElementById(imgid).src = imgsrc + imgColor + '.jpg';
                 document.getElementById(imgid+'a').src = imgsrc + imgColor + '.jpg';
                 document.getElementById(imgid+'b').src = imgsrc + '2' + imgColor  + '.jpg';
@@ -55,14 +56,18 @@
         function cklik(g) {
             btn1 = document.getElementById("button1");
             btn2 = document.getElementById("button2");
+            btn3 = document.getElementById("button3");
             color = '';
             if (btn2.name == 'pressed') {
-                color = 'BLUE';
+                color = 'Yellow';
             }
             if (btn1.name == 'pressed') {
                 color = ''
             }
-            z = document.getElementById("OHMYGOD");
+            if (btn3.name == 'pressed') {
+                color = 'Yellow'
+            }
+            z = document.getElementById("Josuke");
             z.src = g + color + '.jpg';
         }
     </script>
@@ -135,7 +140,14 @@
         width: 50px;
         height: 50px;
         border-radius: 40px;
-        background-color:rgb(34,55,88);
+        background-color:rgb(251,224,61);
+        border: 2px solid  rgb(47, 158, 255);
+    }
+    .еgtrile {
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        background-color:rgb(198,30,45);
         border: 2px solid  rgb(47, 158, 255);
     }
 </style>
@@ -179,19 +191,19 @@
 
     <div class="item-d">
         <div class="gtr">
-            <img class="img" src="OHMYGOD.jpg" id="OHMYGODa" alt="" width="143" height="143" onclick="cklik('OHMYGOD')" ><br>
-            <img class ="img" src="OHMYGOD2.jpg" id="OHMYGODb" alt="" width="143" height="143" onclick="cklik('OHMYGOD2')"><br>
-            <img class="img" src="OHMYGOD3.jpg" id="OHMYGODc" alt="" width="143" height="143" onclick="cklik('OHMYGOD3')"><br>
-            <img class="img" src="OHMYGOD4.jpg" id="OHMYGODd" alt="" width="143" height="143" onclick="cklik('OHMYGOD4')"><br>
-            <img class="img" src="OHMYGOD5.jpg" id="OHMYGODe" alt="" width="144" height="144" onclick="cklik('OHMYGOD5')"><br>
+            <img class="img" src="Josuke.jpg" id="Josukea" alt="" width="143" height="143" onclick="cklik('Josuke')" ><br>
+            <img class ="img" src="Josuke2.jpg" id="Josukeb" alt="" width="143" height="143" onclick="cklik('Josuke2')"><br>
+            <img class="img" src="Josuke3.jpg" id="Josukec" alt="" width="143" height="143" onclick="cklik('Josuke3')"><br>
+            <img class="img" src="Josuke4.jpg" id="Josuked" alt="" width="143" height="143" onclick="cklik('Josuke4')"><br>
+            <img class="img" src="Josuke5.jpg" id="Josukee" alt="" width="144" height="144" onclick="cklik('Josuke5')"><br>
     </div>
-    <img class="img" src="OHMYGOD.jpg" alt="" id="OHMYGOD" width="800" height="800">
+    <img class="img" src="Josuke.jpg" alt="" id="Josuke" width="800" height="800">
         <div class="aaa">
             <p class="rrrt">О Боже мой!</p>
 
-            <button onclick="toter()">XS</button>
-            <button onclick="torent()">XXL</button>    
-            <button onclick="billion()">S</button>    
+            <button onclick="toter()">XSS</button>
+            <button onclick="torent()">5XL</button>    
+            <button onclick="billion()">XXXL</button>    
         <div id="fiu">
              <P2>Размер XS</P2> <br>
              <h>Российский размер...............?</h> <br>   
@@ -203,8 +215,9 @@
         <div id="ytr">            
             <h >Цвет - белый</h>
         </div>
-            <button class="ggtril" id="button1" onclick="ovr('', 'OHMYGOD')"></button>
-            <button class="еgtril" id="button2" onclick="ovr('BLUE', 'OHMYGOD')"></button>
+            <button class="ggtril" id="button1" onclick="ovr('', 'Josuke')"></button>
+            <button class="еgtril" id="button2" onclick="ovr('Yellow', 'Josuke')"></button>
+            <button class="еgtrilr" id="button3" onclick="ovr('red', 'Josuke')"></button>
             <p>Состав: 100% хлопок</p>
             <button onclick="calc()" class="hhhhh"><p>Добавить в корзину</p></button>
 
@@ -216,23 +229,23 @@
 <task>
     О товаре <br>
     <br>
-    Базовая футболка прямого кроя, создана из мягкого хлопка. Можно купить с принтом из каталога, без принта или со своим дизайном.<br><br>
-    
-    Состав...........100% хлопок<br>
-    Тип нанесения..........Прямая печать пигментными чернилами<br>
-    Силуэт...........Прямой<br>
-    Вырез горловины.........Круглый<br>
-    Длина............До линии бёдер<br>
-    Размер товара на модели...........M<br>
-    Параметры модели (ОГ-ОТ-ОБ)...........94-73-93<br>
-    Рост модели на фото..........188см<br>
-    Стиль............Повседневный, спортивный, домашний<br>
-    Сезон..........Мульти<br>
-    Размерный ряд............XXS - 7XL<br>
-    Пол.........Мужской<br>
-    Страна производства...........Россия<br>
-    Стандартная упаковка..........Пакет с клеевым клапаном 25*32см<br>
-    Правила ухода..............Максимальная температура стирки 30 С. Отбеливание запрещено. Не применять барабанную сушку. Гладить при температуре не более 110 С. Сухая чистка запрещена.<br>
+Футболка Oversize из мягкого хлопка создана для тех, кто любит свободный стиль одежды. Футболка спроектирована по трендовым лекалам: спущенная линия плеча, удлиненный рукав, длина до линии бедер, свободная посадка по фигуре.<br><br>
+
+Правила ухода.........................Максимальная температура стирки 30 С. Отбеливание<br> запрещено. Не применять барабанную сушку. Гладить при <br>температуре не более 110 С. Сухая чистка запрещена.<br><br>
+Состав........100% хлопок<br>
+Тип нанесения..........Прямая печать пигментными чернилами<br>
+Силуэт.........Оверсайз<br>
+Вырез горловины.........Круглый<br>
+Длина..........Ниже линии бёдер<br>
+Размер товара на модели........М<br>
+Параметры модели (ОГ-ОТ-ОБ).........86-63-92<br>
+Рост модели на фото..........175см<br>
+Стиль..........Повседневный<br>
+Сезон..........Мульти<br>
+Размерный ряд..........XXS - 5XL<br>
+Пол..........Женский<br>
+Страна производства..........Россия<br>
+Стандартная упаковка..........Пакет с клеевым клапаном 25*32см
 </task>
   
     <main>
