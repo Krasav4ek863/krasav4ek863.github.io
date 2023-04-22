@@ -7,26 +7,27 @@
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
     <script>
+        
         function toter() {
             z = document.getElementById("fiu");
-            document.getElementById("size").innerHTML = "XSS";
-            document.getElementById("rusize").innerHTML = 40;
-            document.getElementById("obhvat").innerHTML = "78-82";
-            document.getElementById("length").innerHTML = 59;
+            document.getElementById("size").innerHTML = "XXS";
+            document.getElementById("rusize").innerHTML = "60-62";
+            document.getElementById("obhvat").innerHTML = "78-86";
+            document.getElementById("length").innerHTML = 66,5;
         }
         function torent() {
             z = document.getElementById("fiu");
-            document.getElementById("size").innerHTML = "5XL";
-            document.getElementById("rusize").innerHTML = "62-64";
-            document.getElementById("obhvat").innerHTML = "122-130";
-            document.getElementById("length").innerHTML = 66;
+            document.getElementById("size").innerHTML = "6XL";
+            document.getElementById("rusize").innerHTML = "72-74";
+            document.getElementById("obhvat").innerHTML = "142-150";
+            document.getElementById("length").innerHTML = 78;
         }
         function billion() {
             z = document.getElementById("fiu");
             document.getElementById("size").innerHTML = "XXXL";
             document.getElementById("rusize").innerHTML = 56;
-            document.getElementById("obhvat").innerHTML = "110-114";
-            document.getElementById("length").innerHTML = 64,5;
+            document.getElementById("obhvat").innerHTML = "118-126";
+            document.getElementById("length").innerHTML = 74,5;
         }
         function tokcd() {
             z =  document.getElementById("ytr");
@@ -42,21 +43,20 @@
             btn2 = document.getElementById("button2");
             btn3 = document.getElementById("button3");
             if (di) {
-                imgsrc = 'Josuke';
+                imgsrc = 'Mista';
                 document.getElementById(imgid).src = imgsrc + imgColor + '.jpg';
                 document.getElementById(imgid+'a').src = imgsrc + imgColor + '.jpg';
                 document.getElementById(imgid+'b').src = imgsrc + '2' + imgColor  + '.jpg';
                 document.getElementById(imgid+'c').src = imgsrc + '3' + imgColor + '.jpg';
-                document.getElementById(imgid+'d').src = imgsrc + '4' + imgColor + '.jpg';
                 document.getElementById(imgid+'e').src = imgsrc + '5' + imgColor  + '.jpg';
-                if (imgColor && imgColor == "Yellow") {
+                if (imgColor && imgColor == "Black") {
                     btn1.name = "";   
                     btn2.name = "pressed";
                     btn3.name = "";   
                     btn1.style.borderColor = "rgb(47, 158, 255)";
                     btn2.style.borderColor = "red";
                     btn3.style.borderColor = "rgb(47, 158, 255)";
-                } else if (imgColor && imgColor == "Red") {
+                } else if (imgColor && imgColor == "Melange") {
                     btn1.name = "";
                     btn2.name = "";
                     btn3.name = "pressed";
@@ -80,18 +80,22 @@
             btn3 = document.getElementById("button3");
             color = '';
             if (btn2.name == 'pressed') {
-                color = 'Yellow';
+                color = 'Black';
             }
             if (btn1.name == 'pressed') {
                 color = ''
             }
             if (btn3.name == 'pressed') {
-                color = 'Red';
+                color = 'Melange';
             }
-            z = document.getElementById("Josuke");
+            z = document.getElementById("Mista");
             z.src = g + color + '.jpg';
         }
     </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script defer src="https://lk.easynetshop.ru/frontend/v5/test.js"></script>
+    <link href="//lk.easynetshop.ru/frontend/v5/test.css" rel="stylesheet">
 </head>
 <style>
     main
@@ -141,14 +145,15 @@
         width: 330px;       
         font-size: 1.5em;
         color: white;
-        background-color: rgb(78, 16, 37);
-        border-radius: 40px;
+        background: rgb(145,124,55);
+        background: linear-gradient(90deg, rgba(145,124,55,0.9192051820728291) 21%, rgba(160,144,90,0.9164040616246498) 21%);
+        border-radius: 60px 2px 2px 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .img {
-        border: 1.5px rgb(110, 15, 15) solid;
+        border:  1.5px rgb(110, 15, 15) solid;
     }
     .ggtril {
         width: 50px;
@@ -157,11 +162,11 @@
         border: 2px solid  rgb(47, 158, 255);        
         background-color: rgb(255, 255, 255);
     }
-    .еgtril {
-        background-color:rgb(251,224,61);
+    .egtril {
+        background-color:rgb(0, 0, 0);
     }
-    .еgtrile {
-        background-color:rgb(198,30,45);
+    .egtrile {
+        background-color: rgba(203, 203, 203, 0.801);
     }
 </style>
 <body>
@@ -204,24 +209,23 @@
 
     <div class="item-d">
         <div class="gtr">
-            <img class="img" src="Josuke.jpg" id="Josukea" alt="" width="143" height="143" onclick="cklik('Josuke')" ><br>
-            <img class ="img" src="Josuke2.jpg" id="Josukeb" alt="" width="143" height="143" onclick="cklik('Josuke2')"><br>
-            <img class="img" src="Josuke3.jpg" id="Josukec" alt="" width="143" height="143" onclick="cklik('Josuke3')"><br>
-            <img class="img" src="Josuke4.jpg" id="Josuked" alt="" width="143" height="143" onclick="cklik('Josuke4')"><br>
-            <img class="img" src="Josuke5.jpg" id="Josukee" alt="" width="144" height="144" onclick="cklik('Josuke5')"><br>
+            <img class="img" src="Mista.jpg" id="Mistaa" alt="" width="180" height="180" onclick="cklik('Mista')" ><br>
+            <img class ="img" src="Mista2.jpg" id="Mistab" alt="" width="180" height="180" onclick="cklik('Mista2')"><br>
+            <img class="img" src="Mista3.jpg" id="Mistac" alt="" width="180" height="180" onclick="cklik('Mista3')"><br>
+            <img class="img" src="Mista5.jpg" id="Mistae" alt="" width="180" height="180" onclick="cklik('Mista5')"><br>
     </div>
-    <img class="img" src="Josuke.jpg" alt="" id="Josuke" width="800" height="800">
+    <img class="img" src="Mista.jpg" alt="" id="Mista" width="800" height="800">
         <div class="aaa">
-            <p class="rrrt">О Боже мой!</p>
+            <p class="rrrt">Гвидо Миста</p>
 
-            <button onclick="toter()">XSS</button>
-            <button onclick="torent()">5XL</button>    
+            <button onclick="toter()">XXS</button>
+            <button onclick="torent()">6XL</button>    
             <button onclick="billion()">XXXL</button>    
         <div id="fiu">
             <table>
                 <tr>
                     <td>Размер</td>
-                    <td id="size">XS</td>
+                    <td id="size">XXS</td>
                 </tr>
                 <tr>
                     <td>Российский размер</td>
@@ -237,13 +241,13 @@
                 </tr>
             </table>
         </div>
-            <p class="rrrt">1330₽</p>
+            <p class="rrrt">1 745₽</p>
         <div id="ytr">            
             <h >Цвет - белый</h>
         </div>
-            <button class="ggtril" id="button1" onclick="ovr('', 'Josuke')"></button>
-            <button class="ggtril еgtril" id="button2" onclick="ovr('Yellow', 'Josuke')"></button>
-            <button class="ggtril еgtrile" id="button3" onclick="ovr('Red', 'Josuke')"></button>
+            <button class="ggtril" id="button1" onclick="ovr('', 'Mista')"></button>
+            <button class="ggtril egtril" id="button2" onclick="ovr('Black', 'Mista')"></button>
+            <button class="ggtril egtrile" id="button3" onclick="ovr('Melange', 'Mista')"></button>
             <p>Состав: 100% хлопок</p>
             <button onclick="calc()" class="hhhhh"><p>Добавить в корзину</p></button>
 
